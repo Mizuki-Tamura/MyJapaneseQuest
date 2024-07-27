@@ -1,35 +1,61 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+header img {
+    max-width: 100%;
+    height: auto;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Mobile styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        text-align: center;
+    }
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        text-align: left;
+    }
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+/* Desktop styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
 }
 
-main {
-    padding: 2rem;
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-section {
-    margin-bottom: 2rem;
+.container > div {
+    flex: 1 1 300px; /* flex-grow, flex-shrink, flex-basis */
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
