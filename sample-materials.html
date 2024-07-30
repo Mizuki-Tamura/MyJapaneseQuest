@@ -37,18 +37,33 @@
             line-height: 1.6;
             margin: 20px 0;
         }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
+        .samples {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-        .content ul li {
-            margin: 10px 0;
+        .sample-item {
+            margin: 20px;
+            text-align: center;
         }
-        .content ul li a {
+        .sample-item img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.2s;
+        }
+        .sample-item img:hover {
+            transform: scale(1.05);
+        }
+        .sample-item a {
             text-decoration: none;
             color: #0066cc;
+            font-size: 1.2em;
+            display: block;
+            margin-top: 10px;
         }
-        .content ul li a:hover {
+        .sample-item a:hover {
             text-decoration: underline;
         }
         footer {
@@ -60,22 +75,3 @@
             bottom: 0;
         }
     </style>
-</head>
-<body>
-    <header class="header">
-        <h1>Sample Materials</h1>
-    </header>
-    <main class="container">
-        <section class="content">
-            <p>Here are some sample materials for you to preview:</p>
-            <ul>
-                <li><a href="March%20Hanami.pdf" target="_blank">March Hanami (PDF)</a></li>
-                <li><a href="Particle.pdf" target="_blank">Particle (PDF)</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Japanese Quest. All rights reserved.</p>
-    </footer>
-</body>
-</html>
