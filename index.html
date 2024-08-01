@@ -104,6 +104,37 @@
             height: 40px;
             margin: 0 10px;
         }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .header {
+                grid-column: 1;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
+            .header {
+                grid-column: 1 / span 2;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+            .header {
+                grid-column: 1 / span 3;
+            }
+        }
     </style>
 </head>
 <body>
@@ -131,6 +162,7 @@
         <div class="testimonial">
             <a href="testimonial.html">Testimonial</a>
         </div>
+    </div>
     <div class="footer">
         <a href="https://www.instagram.com/my_japanese_quest/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
