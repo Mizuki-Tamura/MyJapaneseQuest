@@ -12,6 +12,28 @@
             background: linear-gradient(120deg, #f0f0f0, #e0f7fa);
             text-align: center;
         }
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 40px 20px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+        }
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -41,29 +63,6 @@
             align-items: center;
             justify-content: center;
         }
-        .header {
-            grid-column: 1 / span 3;
-            background-color: #3498db;
-            color: white;
-            padding: 40px 20px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            position: relative;
-        }
-        .header img {
-            width: 100px;
-            height: 100px;
-            display: block;
-            margin: 0 auto 20px auto;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .header p {
-            margin: 10px 0 0 0;
-            font-size: 1.2em;
-        }
         .download {
             background-color: #1abc9c;
         }
@@ -74,13 +73,16 @@
             background-color: #9b59b6;
         }
         .preview {
-            background-color: #ff83C1;
+            background-color: #8e44ad;
         }
         .qa {
             background-color: #f39c12;
         }
         .testimonial {
             background-color: #f1c40f;
+        }
+        .pricing {
+            background-color: #253f4b;
         }
         .footer {
             background-color: #ffffff;
@@ -103,6 +105,46 @@
             width: 40px;
             height: 40px;
             margin: 0 10px;
+        }
+
+        /* Navigation Menu */
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 999;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
         }
 
         /* Responsive design */
@@ -138,6 +180,19 @@
     </style>
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="consultation.html">Book Free Consultation</a>
+        <a href="sample-materials.html">Sample Materials</a>
+        <a href="Class-Preview.html">Your Class Preview</a>
+        <a href="qa.html">Q&A</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="pricing.html">Pricing</a>
+    </div>
+
+    <span class="menu" onclick="openNav()">&#9776;</span>
+
     <div class="header">
         <img src="logo1.png" alt="MyJapaneseQuest Logo">
         <h1>MyJapaneseQuest</h1>
@@ -149,9 +204,6 @@
         </div>
         <div class="consultation">
             <a href="consultation.html">Book Free Consultation</a>
-        </div>
-        <div class="pricing">
-           <a href="pricing.html">Pricing</a>
         </div>
         <div class="materials">
             <a href="sample-materials.html">Sample Materials</a>
@@ -165,6 +217,9 @@
         <div class="testimonial">
             <a href="testimonial.html">Testimonial</a>
         </div>
+        <div class="pricing">
+            <a href="pricing.html">Pricing</a>
+        </div>
     </div>
     <div class="footer">
         <a href="https://www.instagram.com/my_japanese_quest/" target="_blank">
@@ -177,5 +232,15 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
         </a>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
