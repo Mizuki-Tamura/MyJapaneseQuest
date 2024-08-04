@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - MyJapaneseQuest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .pricing-table {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .package {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .package h2 {
+            margin-top: 0;
+        }
+        .package ul {
+            list-style: none;
+            padding: 0;
+        }
+        .package ul li {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #3498db;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .pricing-table {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .pricing-table {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Pricing</h1>
+    </header>
+    <main class="container">
+        <section class="pricing-table">
+            <div class="package">
+                <h2>Standard Package</h2>
+                <ul>
+                    <li>2 x 1-hour classes per month</li>
+                    <li>1 hour worth of outside class support</li>
+                    <li>Homework and Feedbacks</li>
+                    <li>Accountability</li>
+                    <li>24/7 Q&A support</li>
+                    <li>All materials included</li>
+                </ul>
+                <p class="price">500 AED / 136 USD per month</p>
+            </div>
+            <div class="package">
+                <h2>Enhanced Package</h2>
+                <ul>
+                    <li>3 x 1-hour classes per month</li>
+                    <li>1 hour worth of outside class support</li>
+                    <li>Homework and Feedbacks</li>
+                    <li>Accountability</li>
+                    <li>24/7 Q&A support</li>
+                    <li>All materials included</li>
+                </ul>
+                <p class="price">650 AED / 176 USD per month</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Japanese Quest. All rights reserved.</p>
+    </footer>
+</body>
+</html>
