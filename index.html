@@ -11,7 +11,7 @@
             padding: 0;
             background: linear-gradient(120deg, #f0f0f0, #e0f7fa);
             text-align: center;
-            color: #0b1215; /* Text color updated */
+            color: #0b1215;
         }
         .header {
             background-color: #3498db;
@@ -73,15 +73,6 @@
         .download {
             background-color: #1abc9c;
         }
-        .consultation {
-            background-color: #e74c3c;
-        }
-        .materials {
-            background-color: #9b59b6;
-        }
-        .preview {
-            background-color: #8e44ad;
-        }
         .qa {
             background-color: #f39c12;
         }
@@ -94,13 +85,13 @@
         .footer {
             background-color: #ffffff;
             padding: 20px 0;
-            color: #0b1215; /* Footer text color updated */
+            color: #0b1215;
             font-size: 1.5em;
             text-align: center;
             border-top: 1px solid #e0e0e0;
         }
         .footer a {
-            color: #0b1215; /* Footer link color updated */
+            color: #0b1215;
             text-decoration: none;
             font-weight: bold;
             margin: 0 10px;
@@ -113,8 +104,6 @@
             height: 40px;
             margin: 0 10px;
         }
-
-        /* Navigation Menu */
         .menu {
             position: fixed;
             top: 20px;
@@ -122,7 +111,7 @@
             font-size: 30px;
             cursor: pointer;
             z-index: 1000;
-            color: #0b1215; /* Menu text color updated */
+            color: #0b1215;
         }
         .sidenav {
             height: 100%;
@@ -154,46 +143,13 @@
             font-size: 36px;
             margin-left: 50px;
         }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-            }
-            .header {
-                grid-column: 1;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1200px) {
-            .container {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(3, 1fr);
-            }
-            .header {
-                grid-column: 1 / span 2;
-            }
-        }
-
-        @media (min-width: 1201px) {
-            .container {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-            }
-            .header {
-                grid-column: 1 / span 3;
-            }
-        }
     </style>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="consultation.html">Book Free Consultation</a>
         <a href="sample-materials.html">Sample Materials</a>
-        <a href="Class-Preview.html">Your Class Preview</a>
         <a href="qa.html">Q&A</a>
         <a href="testimonial.html">Testimonial</a>
         <a href="pricing.html">Pricing</a>
@@ -205,36 +161,6 @@
         <img src="logo1.png" alt="MyJapaneseQuest Logo">
         <h1>MyJapaneseQuest</h1>
         <p>YOUR PERSONALISED LEARNING EXPERIENCE</p>
-    </div>
-
-    <div class="container">
-        <div class="cultural-challenge">
-            <a href="March%20Hanami.pdf" target="_blank">Japanese Cultural Learning Challenge</a>
-        </div>
-        <div class="grammar-challenge">
-            <a href="Particle.pdf" target="_blank">Foundation Grammar Challenge</a>
-        </div>
-        <div class="download">
-            <a href="mailto:japanesetutorinabudhabi@gmail.com?subject=Free%20PDF%20Book%20Request&body=I%20would%20like%20to%20receive%20the%20free%20PDF%20book%20on%20'How%20to%20start%20learning%20Japanese'">Receive Free PDF Book on "How to start learning Japanese"</a>
-        </div>
-        <div class="consultation">
-            <a href="consultation.html">Book Free Consultation</a>
-        </div>
-        <div class="materials">
-            <a href="sample-materials.html">Sample Materials</a>
-        </div>
-        <div class="preview">
-            <a href="Class-Preview.html">Your Class Preview</a>
-        </div>
-        <div class="qa">
-            <a href="qa.html">Q&A</a>
-        </div>
-        <div class="testimonial">
-            <a href="testimonial.html">Testimonial</a>
-        </div>
-        <div class="pricing">
-            <a href="pricing.html">Pricing</a>
-        </div>
     </div>
 
     <div class="footer">
